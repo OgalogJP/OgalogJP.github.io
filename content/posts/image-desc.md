@@ -1,7 +1,7 @@
 ---
 title: "Hugo（PaperMod）で記事に画像を貼る方法まとめ"
 date: 2026-07-27T19:38:00+09:00
-draft: false
+draft: true
 tags: ["Hugo", "PaperMod", "技術メモ", "ブログ構築"]
 ---
 
