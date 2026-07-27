@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on Eila Dev Notes</title>
-    <link>http://localhost:1313/tags/hugo/</link>
+    <link>https://OgalogJP.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on Eila Dev Notes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Jul 2026 19:38:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://OgalogJP.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo（PaperMod）で記事に画像を貼る方法まとめ</title>
-      <link>http://localhost:1313/posts/image-desc/</link>
+      <link>https://OgalogJP.github.io/posts/image-desc/</link>
       <pubDate>Mon, 27 Jul 2026 19:38:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/image-desc/</guid>
+      <guid>https://OgalogJP.github.io/posts/image-desc/</guid>
       <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 &lt;p&gt;Hugo + PaperMod で技術ブログを書く際、スクショや設定画面を貼りたい場面は多い。&lt;br&gt;
 この記事では、&lt;strong&gt;画像の置き場所・貼り方・サイズ調整・中央寄せ・横並び&lt;/strong&gt;など、&lt;br&gt;

@@ -2,45 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://OgalogJP.github.io/</loc>
     <lastmod>2026-07-27T19:38:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://OgalogJP.github.io/tags/hugo/</loc>
     <lastmod>2026-07-27T19:38:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/image-desc/</loc>
+    <loc>https://OgalogJP.github.io/posts/image-desc/</loc>
     <lastmod>2026-07-27T19:38:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/papermod/</loc>
+    <loc>https://OgalogJP.github.io/tags/papermod/</loc>
     <lastmod>2026-07-27T19:38:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://OgalogJP.github.io/posts/</loc>
     <lastmod>2026-07-27T19:38:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://OgalogJP.github.io/tags/</loc>
     <lastmod>2026-07-27T19:38:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E3%83%96%E3%83%AD%E3%82%B0%E6%A7%8B%E7%AF%89/</loc>
+    <loc>https://OgalogJP.github.io/tags/%E3%83%96%E3%83%AD%E3%82%B0%E6%A7%8B%E7%AF%89/</loc>
     <lastmod>2026-07-27T19:38:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%8A%80%E8%A1%93%E3%83%A1%E3%83%A2/</loc>
+    <loc>https://OgalogJP.github.io/tags/%E6%8A%80%E8%A1%93%E3%83%A1%E3%83%A2/</loc>
     <lastmod>2026-07-27T19:38:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/first-post/</loc>
+    <loc>https://OgalogJP.github.io/posts/first-post/</loc>
     <lastmod>2026-07-27T19:31:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blender/</loc>
+    <loc>https://OgalogJP.github.io/tags/blender/</loc>
     <lastmod>2026-07-27T19:31:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/havok/</loc>
+    <loc>https://OgalogJP.github.io/tags/havok/</loc>
     <lastmod>2026-07-27T19:31:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mod%E5%88%B6%E4%BD%9C/</loc>
+    <loc>https://OgalogJP.github.io/tags/mod%E5%88%B6%E4%BD%9C/</loc>
     <lastmod>2026-07-27T19:31:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ue5/</loc>
+    <loc>https://OgalogJP.github.io/tags/ue5/</loc>
     <lastmod>2026-07-27T19:31:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://OgalogJP.github.io/categories/</loc>
   </url>
 </urlset>
