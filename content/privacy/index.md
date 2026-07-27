@@ -37,4 +37,3 @@ https://policies.google.com/technologies/ads
 本サイトのプライバシーに関するお問い合わせは、以下のページよりご連絡ください。
 
 [お問い合わせ](/contact/)
-s
