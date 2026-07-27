@@ -1,6 +1,6 @@
 theme = "PaperMod"
 baseURL = 'https://OgalogJP.github.io/'
-locale = 'en-us'
+locale = 'ja-jp'
 title = 'Eila Dev Notes'
 
 [params]
