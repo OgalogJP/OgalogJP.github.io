@@ -10,23 +10,23 @@ title = 'Eila Dev Notes'
 
 [menu]
   [[menu.main]]
-    name = "ホーム"
+    name = "Home"
     url = "/"
     weight = 1
 
   [[menu.main]]
-    name = "記事一覧"
+    name = "Posts"
     url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    name = "タグ"
-    url = "/tags/"
+    name = "Privacy policy"
+    url = "/privacy/"
     weight = 3
 
   [[menu.main]]
-    name = "アーカイブ"
-    url = "/archives/"
+    name = "Contact"
+    url = "/contact/"
     weight = 4
 
 
