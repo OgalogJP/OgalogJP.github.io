@@ -8,6 +8,11 @@ title = 'Eila Dev Notes'
   description = "ゲーム制作・Mod制作・Blender・UE5の技術メモ"
   defaultTheme = "dark"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [menu]
   [[menu.main]]
     name = "Home"
