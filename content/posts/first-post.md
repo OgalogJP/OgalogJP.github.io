@@ -19,9 +19,14 @@ tags: ["Blender", "Mod制作", "UE5", "Havok", "技術メモ"]
 - （ハマりやすい部分）
 
 ## 補足
-必要ならコードや設定値を記載：
+必要ならコードや設定値を記載
 
-```txt
-（設定値やコード）
-
-{{< adsense >}}
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3696117703082942"
+     data-ad-slot="4894199601"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
