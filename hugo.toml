@@ -15,33 +15,28 @@ title = 'Eila Dev Notes'
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 2
+    weight = 1
 
   [[menu.main]]
     name = "Game Dev"
     url = "/tags/GameDev/"
-    weight = 3
+    weight = 2
 
   [[menu.main]]
     name = "MOD"
     url = "/tags/MOD/"
-    weight = 4
+    weight = 3
 
   [[menu.main]]
     name = "Privacy policy"
     url = "/privacy/"
-    weight = 5
+    weight = 4
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 6
+    weight = 5
 
 
