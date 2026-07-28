@@ -1,11 +1,11 @@
 ---
 title: "コンタクト"
-draft: true
+draft: false
 ---
 
-本サイトに関するご質問やご連絡は、以下のメールアドレス宛にお願いいたします。
+本サイト・管理人へのコンタクトは以下のフォームからお願いします。
+※返信に時間がかかる場合があります。ご了承ください。
 
-**メールアドレス：**  
-example@example.com
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgzrYXfEPOCxkJFlGlduEdApezF1jQGMtj2uba_poXqtGHMA/viewform?embedded=true" width="640" height="556" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
-※返信にはお時間をいただく場合があります。ご了承ください。
+
