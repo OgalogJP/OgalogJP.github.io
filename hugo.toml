@@ -1,11 +1,11 @@
 theme = "PaperMod"
 baseURL = 'https://OgalogJP.github.io/'
 locale = 'ja-jp'
-title = 'Eila Dev Notes'
+title = 'Eila Game Lab'
 
 [params]
-  env = "production"    
-  description = "ゲーム制作・Mod制作・Blender・UE5の技術メモ"
+  env = "production"
+  description = "ゲーム制作・Mod制作・技術メモ"
   defaultTheme = "dark"
 
 [markup]
