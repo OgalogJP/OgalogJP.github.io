@@ -5,6 +5,7 @@
   <!-- 左カラム -->
   <aside class="sidebar-left">
     <!-- ここに左側に表示したいコンテンツ -->
+     {{ if .IsPage }}
     <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-3696117703082942"
@@ -14,7 +15,7 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
+ {{ end }}
   </aside>
 
 <article class="post-single">
