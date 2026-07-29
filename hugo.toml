@@ -8,7 +8,7 @@ title = 'Eila Game Lab'
   description = "ゲーム制作・Mod制作・技術メモ"
   defaultTheme = "dark"
   showCover = false
-  homeInfoMode = false
+  homeInfoMode = true
 
 [markup]
   [markup.goldmark]
