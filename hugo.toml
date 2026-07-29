@@ -7,6 +7,7 @@ title = 'Eila Game Lab'
   env = "production"
   description = "ゲーム制作・Mod制作・技術メモ"
   defaultTheme = "dark"
+  showCover = true
 
 [markup]
   [markup.goldmark]
