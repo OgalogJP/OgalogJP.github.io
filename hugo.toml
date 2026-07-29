@@ -9,7 +9,6 @@ title = 'Eila Game Lab'
   defaultTheme = "dark"
   showCover = true
   homeInfoMode = false
-  showCover = true
   cover:
     hiddenInList: false
   disableSpecial1stPost = true
