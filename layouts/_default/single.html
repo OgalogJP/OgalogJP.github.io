@@ -5,7 +5,8 @@
   <!-- 左カラム（必要なければ省略可） -->
   <aside class="sidebar-left">
     <!-- ここに左側に表示したいコンテンツ（ナビゲーション等）を記述 -->
-     <ins class="adsbygoogle"
+    <h3>左サイドバー</h3>
+    <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-3696117703082942"
      data-ad-slot="4894199601"
@@ -15,7 +16,6 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-    <h3>左サイドバー</h3>
   </aside>
 
 <article class="post-single">
@@ -48,9 +48,11 @@
   </header>
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+  {{- /* 既存の目次読み込みを無効化
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
   {{- end }}
+ */ -}}
 
   {{- if .Content }}
   <div class="post-content md-content">
