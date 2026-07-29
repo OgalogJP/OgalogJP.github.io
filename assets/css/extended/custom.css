@@ -1,17 +1,24 @@
-.page-wrapper {
-  display: grid;
-  grid-template-columns: 200px 1fr 200px;
-  gap: 20px;
+/* PCサイズ以上のときに3カラム化する */
+@media screen and (min-width: 1024px) {
+    .three-column-container {
+        display: grid;
+        /* 左: 200px, 中央: 自動(メイン), 右: 250px の3カラムを指定 */
+        grid-template-columns: 200px 1fr 250px;
+        gap: 30px;
+        max-width: var(--main-width); /* PaperModの標準幅に合わせるか任意で広げる */
+        margin: 0 auto;
+        align-items: start;
+    }
+
+    /* PaperMod本来のメイン幅制限を上書きしてコンテナ全体を広げる場合 */
+    :root {
+        --main-width: 1200px; /* 必要に応じて全体の最大横幅を拡張 */
+    }
 }
 
-.sidebar-left,
-.sidebar-right {
-  position: sticky;
-  top: 80px;
-  padding: 10px;
-}
-
-.sidebar-left > *,
-.sidebar-right > * {
-  margin-bottom: 20px;
+/* スマホやタブレットでは縦並び（通常の1カラム）に戻す */
+@media screen and (max-width: 1023px) {
+    .sidebar-left, .sidebar-right {
+        display: none; /* モバイルでは非表示にする、または下部に回す */
+    }
 }
