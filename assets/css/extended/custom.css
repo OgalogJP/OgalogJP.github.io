@@ -3,7 +3,7 @@
     :root {
         --main-width: 100% !important;
     }
-    
+
     .main:has(.post-entry) {
         max-width: 740px !important; /* PaperMod本来の引き締まったサイズ */
         margin: 0 auto !important;
@@ -21,10 +21,19 @@
         align-items: start;
     }
 
-    /* PaperMod本来のメイン幅制限を上書きしてコンテナ全体を広げる場合 */
-    :root {
-        --main-width: 1200px; /* 必要に応じて全体の最大横幅を拡張 */
+    .sidebar-left {
+        position: sticky;
+        top: 120px;          
+        margin-top: 40px;    
     }
+
+    /* 右カラム（目次エリア）の位置調整 */
+    .sidebar-right {
+        position: sticky;
+        top: 120px;    
+        margin-top: 40px;
+    }
+
 }
 
 /* スマホやタブレットでは縦並び（通常の1カラム）に戻す */
