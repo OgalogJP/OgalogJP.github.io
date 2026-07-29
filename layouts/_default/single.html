@@ -2,10 +2,9 @@
 
 <!-- 3カラム全体を包むコンテナを追加 -->
 <div class="three-column-container">
-  <!-- 左カラム（必要なければ省略可） -->
+  <!-- 左カラム -->
   <aside class="sidebar-left">
-    <!-- ここに左側に表示したいコンテンツ（ナビゲーション等）を記述 -->
-    <h3>左サイドバー</h3>
+    <!-- ここに左側に表示したいコンテンツ -->
     <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-3696117703082942"
@@ -84,10 +83,9 @@
   {{- end }}
 </article>
 
-  <!-- 右カラム（プロフィールや最新記事、目次など） -->
+  <!-- 右カラム -->
   <aside class="sidebar-right">
-    <!-- ここに右側に表示したいコンテンツを記述 -->
-    <h3>Table of Contents</h3>
+    <!-- ここに右側に表示したいコンテンツ -->
      {{- if (.Param "ShowToc") }}
             <div class="sidebar-toc">
                 {{- partial "toc.html" . }}
