@@ -11,7 +11,6 @@ title = 'Eila Game Lab'
   homeInfoMode = false
   disableSpecial1stPost = true
   showToc = true
-  tocOpen = true
   
 [markup]
   [markup.goldmark]

@@ -1,0 +1,17 @@
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 20px;
+}
+
+.sidebar-left,
+.sidebar-right {
+  position: sticky;
+  top: 80px;
+  padding: 10px;
+}
+
+.sidebar-left > *,
+.sidebar-right > * {
+  margin-bottom: 20px;
+}
