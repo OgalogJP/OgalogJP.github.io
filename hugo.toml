@@ -10,7 +10,9 @@ title = 'Eila Game Lab'
   showCover = true
   homeInfoMode = false
   disableSpecial1stPost = true
-
+  showToc = true
+  tocOpen = true
+  
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
