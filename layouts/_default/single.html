@@ -87,7 +87,12 @@
   <!-- 右カラム（プロフィールや最新記事、目次など） -->
   <aside class="sidebar-right">
     <!-- ここに右側に表示したいコンテンツを記述 -->
-    <h3>右サイドバー</h3>
+    <h3>Table of Contents</h3>
+     {{- if (.Param "ShowToc") }}
+            <div class="sidebar-toc">
+                {{- partial "toc.html" . }}
+            </div>
+        {{- end }}
   </aside>
 
 </div>
