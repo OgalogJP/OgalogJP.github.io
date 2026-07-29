@@ -3,11 +3,12 @@
     :root {
         --main-width: 100% !important;
     }
-    .main:has(.home-info),
-    .main:has(.first-entry),
-    .main:has(.list-page) {
-        max-width: 740px !important; /* 元の引き締まったサイズ */
+    
+    .main:has(.post-entry) {
+        max-width: 740px !important; /* PaperMod本来の引き締まったサイズ */
         margin: 0 auto !important;
+        padding-left: var(--gap) !important;
+        padding-right: var(--gap) !important;
     }
 
     .three-column-container {
