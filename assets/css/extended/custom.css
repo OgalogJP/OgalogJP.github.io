@@ -1,12 +1,13 @@
 /* PCサイズ以上のときに3カラム化する */
 @media screen and (min-width: 1024px) {
-      :has(.three-column-container) .main {
-        max-width: 100% !important;
-        padding-left: 30px !important;  /* 完全にベタ付けだと見づらいので最低限の余白を確保 */
-        padding-right: 30px !important; /* 好みに合わせて 0px にしてもOKです */
-    }
-        :root {
+    :root {
         --main-width: 100% !important;
+    }
+    .main:has(.home-info),
+    .main:has(.first-entry),
+    .main:has(.list-page) {
+        max-width: 740px !important; /* 元の引き締まったサイズ */
+        margin: 0 auto !important;
     }
 
     .three-column-container {
