@@ -22,16 +22,17 @@
     }
 
     .sidebar-left {
-        position: sticky;
-        top: 120px;          
-        margin-top: 40px;    
+        position: static; 
+        margin-top: 60px;
     }
 
     /* 右カラム（目次エリア）の位置調整 */
     .sidebar-right {
         position: sticky;
         top: 120px;    
-        margin-top: 40px;
+        margin-top: 60px;
+        max-height: calc(100vh - 120px); 
+        overflow-y: auto;  
     }
 
 }
