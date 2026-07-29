@@ -7,8 +7,12 @@ title = 'Eila Game Lab'
   env = "production"
   description = "ゲーム制作・Mod制作・技術メモ"
   defaultTheme = "dark"
-  showCover = false
-  homeInfoMode = true
+  showCover = true
+  homeInfoMode = false
+  showCover = true
+  cover:
+    hiddenInList: false
+  disableSpecial1stPost = true
 
 [markup]
   [markup.goldmark]
