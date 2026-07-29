@@ -8,9 +8,9 @@ title = 'Eila Game Lab'
   description = "ゲーム制作・Mod制作・技術メモ"
   defaultTheme = "dark"
   showCover = true
-  homeInfoMode = false
   cover:
     hiddenInList: false
+  homeInfoMode = false
   disableSpecial1stPost = true
 
 [markup]
