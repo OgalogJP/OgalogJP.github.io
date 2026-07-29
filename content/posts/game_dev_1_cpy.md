@@ -1,8 +1,6 @@
 ---
 title: "ゲーム制作の企画"
 summary: "制作ゲームの企画についてまとめている"
-cover:
-  image: "/images/cover_list.png"
 draft: false
 tags: ["GameDev"]
 ---
