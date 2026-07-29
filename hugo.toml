@@ -13,6 +13,10 @@ title = 'Eila Game Lab'
   showToc = true
   
 [markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
