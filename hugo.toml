@@ -10,7 +10,6 @@ title = 'Eila Game Lab'
   showCover = true
   homeInfoMode = false
   disableSpecial1stPost = true
-  UseHugoToc = false
   showToc = true
   
 [markup]
