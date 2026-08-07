@@ -33,8 +33,8 @@ title = 'Eila Game Lab'
     weight = 2
 
   [[menu.main]]
-    name = "MOD"
-    url = "/tags/MOD/"
+    name = "Other"
+    url = "/tags/Other/"
     weight = 3
 
   [[menu.main]]
