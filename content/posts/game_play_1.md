@@ -1,5 +1,6 @@
 ---
 title: "Arena Breakout: Infinite Lv30 まで遊んでみた"
+summary: "Arena Breakout: Infinite をプレイした所感"
 draft: false
 tags: ["Misc"]
 ---
