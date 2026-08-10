@@ -11,6 +11,7 @@ title = 'Eila Game Lab'
   homeInfoMode = false
   disableSpecial1stPost = true
   showToc = true
+  ShowDate = true
   
 [markup]
   [markup.goldmark]
