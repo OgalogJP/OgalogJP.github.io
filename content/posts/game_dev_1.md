@@ -2,6 +2,7 @@
 title: "ゲーム制作の企画"
 summary: "制作ゲームの企画についてまとめている"
 date: 2026-08-07T00:00:00+09:00
+lastmod: 2026-08-07T00:00:00+09:00
 draft: false
 tags: ["GameDev"]
 ---

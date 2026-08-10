@@ -2,6 +2,7 @@
 title: "学園シミュ Lib開発 NpcFactory"
 summary: "学園シミュで使う c++ ライブラリ NpcFactory の解説"
 date: 2026-08-10T00:00:00+09:00
+lastmod: 2026-08-10T00:00:00+09:00
 draft: false
 tags: ["GameDev", "NpcFactory"]
 ---
