@@ -11,7 +11,9 @@ title = 'Eila Game Lab'
   homeInfoMode = false
   disableSpecial1stPost = true
   showToc = true
-  
+  ShowLastMod = true
+  enableGitInfo = true
+    
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
