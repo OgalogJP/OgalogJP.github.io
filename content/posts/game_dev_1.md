@@ -186,13 +186,13 @@ SE は無料素材 + Wwise で何とかする。<br>
 実のところこのゲーム自体、別ゲー制作のためのプロとタイプとする予定です。<br>
 プロトタイプとはいえゲームとしては完成させ、十分遊べるレベルまで仕上げます。
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020147357020239"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3696117703082942"
      crossorigin="anonymous"></script>
-<!-- myblog -->
+<!-- githubpages-display-01 -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-4020147357020239"
-     data-ad-slot="5169253503"
+     data-ad-client="ca-pub-3696117703082942"
+     data-ad-slot="4894199601"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>

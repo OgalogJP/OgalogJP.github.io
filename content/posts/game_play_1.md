@@ -80,13 +80,13 @@ Lv1 からプレイし始めて、オートマッチでマッチするプレイ�
 ロードアウト周りの UI はほぼタルコフだがそれ以外の UI、特にイベントの UI がかなり使い辛い。<br>
 タブを開いたらまたタブが出てくるような作りで、慣れるまで目的の画面になかなかたどり着かない。
  
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020147357020239"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3696117703082942"
      crossorigin="anonymous"></script>
-<!-- myblog -->
+<!-- githubpages-display-01 -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-4020147357020239"
-     data-ad-slot="5169253503"
+     data-ad-client="ca-pub-3696117703082942"
+     data-ad-slot="4894199601"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>

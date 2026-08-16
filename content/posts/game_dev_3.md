@@ -78,13 +78,13 @@ ClubSystemの機能は以下の通り
 
 部活はプレイヤーや NPC の特徴付けとして重要な要素です。また会話においても部活に関する内容を話す際に役立ちます。
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020147357020239"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3696117703082942"
      crossorigin="anonymous"></script>
-<!-- myblog -->
+<!-- githubpages-display-01 -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-4020147357020239"
-     data-ad-slot="5169253503"
+     data-ad-client="ca-pub-3696117703082942"
+     data-ad-slot="4894199601"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
