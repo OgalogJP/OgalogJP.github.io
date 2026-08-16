@@ -90,10 +90,13 @@ npc は在校生と卒業生を分けて保持している。
 
 次回以降も引き続き、別ライブラリの解説をしていきます。
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020147357020239"
+     crossorigin="anonymous"></script>
+<!-- myblog -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-3696117703082942"
-     data-ad-slot="4894199601"
+     data-ad-client="ca-pub-4020147357020239"
+     data-ad-slot="5169253503"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>

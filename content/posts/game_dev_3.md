@@ -80,8 +80,8 @@ ClubSystemの機能は以下の通り
 
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-3696117703082942"
-     data-ad-slot="4894199601"
+     data-ad-client="ca-pub-4020147357020239"
+     data-ad-slot="5169253503"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
