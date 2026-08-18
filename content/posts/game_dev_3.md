@@ -28,7 +28,7 @@ tags: ["GameDev", "ClubSystem"]
 ## 依存する別Lib
 
 - CommonLib : 他 Lib が参照するデータ Lib
-- [NPCFactory](game_dev_2) : NPCmanager を参照する
+- [NPCFactory](/posts/game_dev_2) : NPCmanager を参照する
 - Social : RelationshipManager を参照する
 
 # 解説
