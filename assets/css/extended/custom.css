@@ -48,20 +48,23 @@
     }
 }
 
-/* 記事内の画像とキャプションを中央寄せにする */
-.post-content figure {
+/* 記事内の画像とその下にあるキャプションテキストを中央寄せにする */
+.post-content p {
     text-align: center;
-    margin: 1.5rem auto;
 }
 
-.post-content figure img {
+.post-content p img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 0.5rem auto; /* 画像自体を中央寄せにし、下に少し余白をあける */
+    max-width: 100%;
+    height: auto;
 }
 
-.post-content figcaption {
+/* キャプションに当たるテキストの見た目を少し調整したい場合 */
+.post-content p img + em, 
+.post-content p img + strong {
+    display: block;
     text-align: center;
-    font-size: 0.9em; /* 少し文字を小さくする場合 */
-    color: var(--secondary); /* PaperModのテーマ色に合わせる場合 */
-    margin-top: 0.5rem;
+    font-size: 0.85em;
+    color: var(--secondary);
 }
