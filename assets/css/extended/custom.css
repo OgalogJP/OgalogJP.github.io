@@ -48,24 +48,30 @@
     }
 }
 
-/* 1. 画像が含まれる段落(p)だけを中央寄せにする */
+/* 1. 画像が含まれる段落だけを中央寄せにする */
 .post-content p:has(img) {
     text-align: center;
 }
 
-/* 2. 画像単体もブロック化して中央に配置する */
-.post-content p img {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
+/* 2. もし箇条書き(li)の中に画像が入っても、文字やポインタが左詰めにならないようブロック化 */
+.post-content li:has(img) {
+    text-align: left; /* 箇条書き全体は左寄せを維持 */
+}
+
+/* 3. 画像自体を中央寄せにする（インラインブロック化） */
+.post-content img {
+    display: block;
+    margin: 0 auto 0.5rem auto; /* 左右のautoで画像自体を中央へ、下に少し余白 */
     max-width: 100%;
     height: auto;
 }
 
-/* 3. 画像の直後にあるキャプション（斜体 or 太字）を中央寄せにして改行する */
+/* 4. キャプション（斜体や太字）を中央寄せにする */
 .post-content p img + br + em,
 .post-content p img + em,
-.post-content p img + strong {
+.post-content p img + strong,
+.post-content li img + em,
+.post-content li img + strong {
     display: block;
     text-align: center;
     font-size: 0.85em;
