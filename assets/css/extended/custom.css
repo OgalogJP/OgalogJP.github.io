@@ -48,23 +48,27 @@
     }
 }
 
-/* 記事内の画像とその下にあるキャプションテキストを中央寄せにする */
-.post-content p {
+/* 1. 画像が含まれる段落(p)だけを中央寄せにする */
+.post-content p:has(img) {
     text-align: center;
 }
 
+/* 2. 画像単体もブロック化して中央に配置する */
 .post-content p img {
-    display: block;
-    margin: 0 auto 0.5rem auto; /* 画像自体を中央寄せにし、下に少し余白をあける */
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
 
-/* キャプションに当たるテキストの見た目を少し調整したい場合 */
-.post-content p img + em, 
+/* 3. 画像の直後にあるキャプション（斜体 or 太字）を中央寄せにして改行する */
+.post-content p img + br + em,
+.post-content p img + em,
 .post-content p img + strong {
     display: block;
     text-align: center;
     font-size: 0.85em;
     color: var(--secondary);
+    margin-top: 0.5rem;
 }
