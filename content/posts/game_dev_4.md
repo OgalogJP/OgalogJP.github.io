@@ -2,7 +2,7 @@
 title: "学園シミュ Lib開発 Common"
 summary: "学園シミュで使う c++ ライブラリ Common の解説"
 date: 2026-08-19T00:00:00+09:00
-draft: true
+draft: false
 tags: ["GameDev", "CommonLib"]
 ---
 
@@ -53,7 +53,7 @@ Common には他のライブラリが使うデータや構造体と小さいユ�
 
 ちょっとわかり辛いと思うので画像で見てみる。
 
-![依存が循環](/images/dev4_1.png)
+![循環依存](/images/dev4_1.png)
 
 ここで Common ライブラリを用意し、依存関係を整理してみる。
 
