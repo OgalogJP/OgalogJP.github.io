@@ -48,11 +48,20 @@
     }
 }
 
-figcaption {
-  text-align: center;
+/* 記事内の画像とキャプションを中央寄せにする */
+.post-content figure {
+    text-align: center;
+    margin: 1.5rem auto;
 }
 
-figure img {
-  display: block;
-  margin: 0 auto;
+.post-content figure img {
+    display: block;
+    margin: 0 auto;
+}
+
+.post-content figcaption {
+    text-align: center;
+    font-size: 0.9em; /* 少し文字を小さくする場合 */
+    color: var(--secondary); /* PaperModのテーマ色に合わせる場合 */
+    margin-top: 0.5rem;
 }

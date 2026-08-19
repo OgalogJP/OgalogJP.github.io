@@ -48,17 +48,12 @@ Common には他のライブラリが使うデータや構造体と小さいユ�
 
 わかり辛いと思うので画像で見てみる。
 
-<figure>
-  <img src="/images/dev4_1.png" alt="循環依存">
-  <figcaption>ライブラリが循環依存している例</figcaption>
-</figure>
+![ライブラリが循環依存している例](/images/dev4_1.png)
+
 
 これは２つのライブラリが循環依存になっている例である。そこで Common ライブラリを用意し、依存関係を整理してみると次のようになる。
 
-<figure>
-  <img src="/images/dev4_2.png" alt="依存を整理">
-  <figcaption>Common を追加して依存方向を揃える</figcaption>
-</figure>
+![Common を追加して依存方向を揃える](/images/dev4_2.png)
 
 こうすることで依存が断ち切られ、構造から循環依存を防ぐことができる。
 
