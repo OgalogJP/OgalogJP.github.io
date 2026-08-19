@@ -9,12 +9,6 @@ tags: ["GameDev", "NpcFactory"]
 # 初めに
 この記事では製作中の学園シミュで使用するライブラリの１つである NpcFactory を解説します。
 
-# 成果物
-|ファイルなど|用途|
-|---|---|
-|NpcFactory.lib|UE が参照するライブラリ|
-|names.json|NPC に使う苗字・名前|
-
 # NpcFactory の役割
 
 - NPCの実体を管理
@@ -27,14 +21,14 @@ tags: ["GameDev", "NpcFactory"]
 ## 構成
 |ユニット|機能|
 |---|---|
-|NameDatabase.h|名前を格納する構造体|
-|NameDatabaseLoader.h|names.json を読み込む|
-|NPCfactory.h / .cpp|NPC生成|
-|NPCManager.h / .cpp|NPC管理|
+|NameDatabase|名前を格納する構造体|
+|NameDatabaseLoader|names.json を読み込む|
+|NPCfactory|NPC生成|
+|NPCManager|NPC管理|
 
-## 依存する別Lib
+## 依存するライブラリ
 
-- CommonLib : 他Libが参照するデータLib
+- [CommonLib](/posts/game_dev_4) : 他Libが参照するデータLib
 
 # 解説
 Npc"Factory"という名前が付いているが、実際にはNPCの生成と管理をする。

@@ -9,11 +9,6 @@ tags: ["GameDev", "ClubSystem"]
 # 初めに
 この記事では製作中の学園シミュで使用するライブラリの１つである ClubSystem を解説します。
 
-# 成果物
-|ファイルなど|用途|
-|---|---|
-|ClubSystem.lib|UE が参照するライブラリ|
-
 # ClubSystem の役割
 
 - NPCを部活に割り当てる ( 入部処理 )
@@ -23,9 +18,9 @@ tags: ["GameDev", "ClubSystem"]
 ## 構成
 |ユニット|機能|
 |---|---|
-|ClubSystem.h / .cpp|部活の設定、部への割り当てなど|
+|ClubSystem|部活の設定、部への割り当てなど|
 
-## 依存する別Lib
+## 依存するライブラリ
 
 - CommonLib : 他 Lib が参照するデータ Lib
 - [NPCFactory](/posts/game_dev_2) : NPCmanager を参照する
