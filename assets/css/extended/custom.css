@@ -47,3 +47,8 @@
         display: none; /* モバイルでは非表示にする、または下部に回す */
     }
 }
+
+figcaption {
+  text-align: center;
+}
+
