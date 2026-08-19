@@ -48,3 +48,30 @@
     }
 }
 
+/* 1. 画像自体をブロック要素にして、左右の余白を auto にして中央寄せにする */
+.post-content img {
+    display: block;
+    margin: 1.5rem auto 0.5rem auto; /* 上下に余白、左右は自動で中央 */
+    max-width: 100%;
+    height: auto;
+}
+
+/* 2. 画像のすぐ後にあるキャプション文字（斜体・太字）だけをピンポイントで中央寄せにする */
+.post-content img + em,
+.post-content img + strong,
+.post-content img + br + em,
+.post-content img + br + strong {
+    display: block;
+    text-align: center;
+    font-size: 0.85em;
+    color: var(--secondary);
+    margin: 0 auto 1.5rem auto;
+}
+
+/* 箇条書き（丸ポチ・数字）全体を少し右にずらして余白を作る */
+.post-content ul, 
+.post-content ol {
+    padding-left: 2rem; /* デフォルトの0から2rem（約32px）に広げる */
+    margin-bottom: 1rem;
+}
+
