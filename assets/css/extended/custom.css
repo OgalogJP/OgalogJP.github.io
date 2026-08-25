@@ -91,4 +91,13 @@
   font-weight: 600;                      /* 見出し感を出す */
 }
 
+.post-content h4 {
+  font-size: 1.15rem;        /* 本文より少し大きい */
+  font-weight: 600;          /* 見出し感を出す */
+  color: var(--content);     /* h3より控えめの色 */
+  margin-top: 1.4rem;        /* 上の余白で区切りを作る */
+  margin-bottom: 0.6rem;     /* 下の余白 */
+}
+
+
 
