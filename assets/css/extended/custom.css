@@ -75,3 +75,11 @@
     margin-bottom: 1rem;
 }
 
+.post-content h2 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 4px;
+  margin-top: 2rem;   /* 見出し上の余白を整える */
+}
+
+
