@@ -82,4 +82,13 @@
   margin-top: 2rem;   /* 見出し上の余白を整える */
 }
 
+.post-content h3 {
+  border-left: 3px solid var(--primary); /* 文字色と同じ色の縦線 */
+  padding-left: 10px;                    /* 線と文字の間隔 */
+  margin-top: 2rem;                      /* 上の余白 */
+  margin-bottom: 0.8rem;                 /* 下の余白 */
+  font-size: 1.3rem;                     /* 少し大きめにして埋もれ防止 */
+  font-weight: 600;                      /* 見出し感を出す */
+}
+
 
