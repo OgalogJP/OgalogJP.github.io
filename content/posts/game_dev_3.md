@@ -6,30 +6,30 @@ draft: false
 tags: ["GameDev", "ClubSystem"]
 ---
 
-# 初めに
+## 初めに
 この記事では製作中の学園シミュで使用するライブラリの１つである ClubSystem を解説します。
 
-# ClubSystem の役割
+## ClubSystem の役割
 
 - NPCを部活に割り当てる ( 入部処理 )
 - 部活の割り当てを解除する ( 退部処理 )
 - 部長・副部長の選出
 
-## 構成
+### 構成
 |ユニット|機能|
 |---|---|
 |ClubSystem|部活の設定、部への割り当てなど|
 
-## 依存するライブラリ
+### 関連するライブラリ
 
 - [CommonLib](/posts/game_dev_4)
 - [NPCFactory](/posts/game_dev_2)
-- Social
+- [Social](/posts/game_dev_5)
 
-# 解説
+## 解説
 ClubSystem は NPC に対して入部・退部処理と部長・副部長の選出を行うライブラリである。
 
-## ClubSystem
+### ClubSystem
 ClubSystem の機能は以下の通り
 
 - まとめて入部・退部処理
@@ -46,10 +46,10 @@ ClubSystem の機能は以下の通り
 部の最小人数<br>
 部の定員レート<br>
 
-## 部活への割り当て
+### 部活への割り当て
 各部に ClubInfo を設定し、定員に対する部員数や男女比が不自然にならないように割り当てをする。
 
-### 意外に難しい割り当て問題
+#### 意外に難しい割り当て問題
 最初から上記の ClubInfo にたどり着いたわけではなく、色々試行錯誤した結果そうなった。
 
 何も考えずにランダムで突っ込んでいくと主に次の２つの問題にぶつかる。
@@ -72,11 +72,11 @@ ClubSystem の機能は以下の通り
 
 現時点では上記の ClubInfo で期待通りの割り当てが出来ているが、注視対象ではある。
 
-## 仕様の注意点
+### 仕様の注意点
 ゲーム内で使用する部の種類・設定をハードコードしている。<br>
 現時点で部活動 23 種 + 生徒会が実装されている。追加の際はコードに変更を加える必要があるが、部活データを外部に出すことを検討中。
 
-# テスト
+## テスト
 このライブラリは以下のテストを行い、正しく動作していること確認した。
 
 - NPCFactory で生成した NPC 群に部活を割り当てる
@@ -89,22 +89,11 @@ ClubSystem の機能は以下の通り
 
 年度更新の際、新入生に対してまとめて部の割り当てを行う場面があるが、そちらのテストは SchoolYearSystem の方で行う。
 
-# 終わりに
+## 終わりに
 今回は ClubSystem の構造を整理・解説しました。
 
 現状の問題点は部活情報をハードコードしてるところですが、運用上の問題はありません。ただ各部の設定に関しては外部データとしておいた方が調整しやすいだろうと考えており、仕様変更を検討中です。
 
 部活はプレイヤーや NPC の特徴付けとして重要な要素です。また会話においても部活に関する内容を話す際に役立ちます。
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3696117703082942"
-     crossorigin="anonymous"></script>
-<!-- githubpages-display-01 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3696117703082942"
-     data-ad-slot="4894199601"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{{< adsense >}}

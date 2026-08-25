@@ -6,10 +6,10 @@ draft: false
 tags: ["GameDev", "NpcFactory"]
 ---
 
-# 初めに
+## 初めに
 この記事では製作中の学園シミュで使用するライブラリの１つである NpcFactory を解説します。
 
-# NpcFactory の役割
+## NpcFactory の役割
 
 - NPCの実体を管理
 - 単体 NPC の生成と削除
@@ -18,7 +18,7 @@ tags: ["GameDev", "NpcFactory"]
 - id から NPCの参照を取得
 - NPC の名前生成
 
-## 構成
+### 構成
 |ユニット|機能|
 |---|---|
 |NameDatabase|名前を格納する構造体|
@@ -26,18 +26,18 @@ tags: ["GameDev", "NpcFactory"]
 |NPCfactory|NPC生成|
 |NPCManager|NPC管理|
 
-## 依存するライブラリ
+### 関連するライブラリ
 
 - [CommonLib](/posts/game_dev_4)
 
-# 解説
+## 解説
 Npc"Factory"という名前が付いているが、実際にはNPCの生成と管理をする。
 
-## 簡単な流れ
+### 簡単な流れ
 1. factory で作った npc 群を manager に渡して管理
 2. 以降 npc の設定変更の際は manager を通して行う
 
-## NPCFactory
+### NPCFactory
 その名の通り、npc を生成する。ざっくり機能は３つ。
 
 - 学年単位で生成
@@ -46,7 +46,7 @@ Npc"Factory"という名前が付いているが、実際にはNPCの生成と�
 
 ３つめに関して、今回の実装ではプレイヤーを特別な扱いとせず、プレイヤーも npc と同じクラスを使っている。
 
-## NPCMamager
+### NPCMamager
 npc の管理をするユニット。機能が少し多い。
 
 - npc を配列に追加
@@ -63,17 +63,17 @@ npc は在校生と卒業生を分けて保持している。
 
 部活に関しては専用の lib である [ClubSystem](/posts/game_dev_3) が部活の割り当てを決め、実際の変更を manager がやる。
 
-## 補足：プレイヤーの扱い
+### 補足：プレイヤーの扱い
 最初 NPC とプレイヤーは別のクラスで扱おうとしていたが、最終的には NPC クラス一つに統合した。
 
-### 当初の計画
+#### 当初の計画
 - Player と NPC ではゲーム内の役割が異なる
 - Player 特有のパラメータがあることを予想していた
 - NPC にはスケジュールや AI 専用のロジックが実装される可能性があった
 
 以上より、Player と NPC は分けた方が良いのではと考えていた。
 
-### クラス統合
+#### クラス統合
 実際に作業を進めてみると次のような問題が発生した。
 
 - 共通フィールドが圧倒的に多い
@@ -83,7 +83,7 @@ npc は在校生と卒業生を分けて保持している。
 
 実装上の大きなメリットとして、生徒に対して何か処理を行う場合 NPC クラスだけ見ればよいこと。
 
-### UE と NPC クラスの連携は ?
+#### UE と NPC クラスの連携は ?
 UE 側の Character とライブラリ内の NPC クラスの連携について軽く述べておく。
 
 UE では Player や NPC を Character として実装する。こちらは共通化せず分けた方が良い。大本の BaseCharacter を継承してNPC や Player を作る形になるだろう。
@@ -92,7 +92,7 @@ UE の Character とライブラリ内の NPC クラスの紐づけは薄いア�
 
 簡単に言えば見た目や動きの部分( = Character )とデータの部分( = NPC クラス)を完全に分離したいという話である。
 
-# テスト
+## テスト
 このライブラリは以下のテストを行い、正しく動作していること確認した。
 
 - names.json の読み込み
@@ -104,7 +104,7 @@ UE の Character とライブラリ内の NPC クラスの紐づけは薄いア�
 - 部活の変更
 - 進級・卒業
 
-# 終わりに
+## 終わりに
 今回は NpcFactory の構造を整理・解説しました。<br>
 現状致命的なバグは無く、テストも問題なしといった状況です。
 
@@ -112,15 +112,4 @@ UE の Character とライブラリ内の NPC クラスの紐づけは薄いア�
 
 次回以降も引き続き、別ライブラリの解説をしていきます。
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3696117703082942"
-     crossorigin="anonymous"></script>
-<!-- githubpages-display-01 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3696117703082942"
-     data-ad-slot="4894199601"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{{< adsense >}}

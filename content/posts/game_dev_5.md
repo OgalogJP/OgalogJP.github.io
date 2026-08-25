@@ -6,13 +6,13 @@ draft: false
 tags: ["GameDev", "SocialLib"]
 ---
 
-# 初めに
+## 初めに
 この記事では製作中の学園シミュで使用するライブラリの１つである Social を解説します。
 
-# Social ライブラリ
+## Social ライブラリ
 Social は Player 対 NPC や NPC 同士の関係値を構築・管理するライブラリである。
 
-## 構成
+### 構成
 このライブラリは構成は以下の通り。
 
 |ユニット|機能|
@@ -22,11 +22,11 @@ Social は Player 対 NPC や NPC 同士の関係値を構築・管理するラ�
 |RelationshipGenerator|関係値 生成|
 |NPCRelationshipmanager|関係値 管理|
 
-## 依存するライブラリ
+### 関連するライブラリ
 
 - [Common](/posts/game_dev_4)
 
-# 解説
+## 解説
 このライブラリではプレイヤーを含む全生徒同士の関係値を生成・管理する。
 
 1 クラスの人数やクラス数次第であるが、現時点では 360 人程の規模である。
@@ -36,7 +36,7 @@ Social は Player 対 NPC や NPC 同士の関係値を構築・管理するラ�
 
 関係値を構築する際は NPC 個々の性格による補正もかかる。
 
-## 関係値とは
+### 関係値とは
 関係値は次のように構成される。
 
 - 親密度
@@ -50,7 +50,7 @@ Social は Player 対 NPC や NPC 同士の関係値を構築・管理するラ�
 
 関係値によって会話内容や選択肢などが変化する。
 
-# テスト
+## テスト
 このライブラリは以下のテストを行い、正しく動作していること確認した。
 
 - 全生徒に対して関係値生成を行う
@@ -61,7 +61,7 @@ Social は Player 対 NPC や NPC 同士の関係値を構築・管理するラ�
 
 現状想定通りの動きをしているが、関係値の持ち方と関係値取得周りの処理が複雑であるため注意する。
 
-# 終わりに
+## 終わりに
 今回は Social の構造を整理・解説しました。
 
 Social で管理している関係値は、ゲーム内の行動を左右する独立したロジックとして扱うための基盤となっています。
@@ -70,15 +70,4 @@ Social で管理している関係値は、ゲーム内の行動を左右する�
 
 関係値が実際にどう作用するかは Conversation でより詳しく解説します。
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3696117703082942"
-     crossorigin="anonymous"></script>
-<!-- githubpages-display-01 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3696117703082942"
-     data-ad-slot="4894199601"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{{< adsense >}}
