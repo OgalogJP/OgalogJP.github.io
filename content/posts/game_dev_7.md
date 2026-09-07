@@ -95,6 +95,6 @@ secret ライブラリでは秘密の生成と保管しか行わない。秘密�
 - [Common](/posts/game_dev_4)
 - [NPCFactory](/posts/game_dev_2)
 - [Social](/posts/game_dev_5)
-- Service
+- [Services](/posts/game_dev_8)
 
 {{< adsense >}}
