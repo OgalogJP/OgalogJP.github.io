@@ -1,7 +1,7 @@
 ---
 title: "学園シミュ Lib開発 NPC について"
 summary: "学園シミュ用ライブラリで使う NPC の説明"
-date: 2026-08-17T00:00:00+09:00
+date: 2026-09-17T00:00:00+09:00
 draft: false
 tags: ["GameDev", "NPC"]
 ---
