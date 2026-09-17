@@ -1,15 +1,13 @@
 ---
-title: "学園シミュ Lib開発 NpcFactory"
-summary: "学園シミュで使う c++ ライブラリ NpcFactory の解説"
+title: "学園シミュ Lib開発 NPCFactory"
+summary: "学園シミュで使う c++ ライブラリ NPCFactory の解説"
 date: 2026-08-10T00:00:00+09:00
 draft: false
-tags: ["GameDev", "NpcFactory"]
+tags: ["GameDev", "NPCFactory"]
 ---
 
-## 初めに
-この記事では製作中の学園シミュで使用するライブラリの１つである NpcFactory を解説します。
-
-## NpcFactory の役割
+## NPCFactory の目的
+"Factory" という名前が付いているが、実際には NPC の生成と管理をするライブラリである。
 
 - NPCの実体を管理
 - 単体 NPC の生成と削除
@@ -18,98 +16,77 @@ tags: ["GameDev", "NpcFactory"]
 - id から NPCの参照を取得
 - NPC の名前生成
 
-### 構成
-|ユニット|機能|
+## ライブラリが扱う概念
+
+- [NPC](/posts/game_dev_9)
+
+## ライブラリの責務
+このライブラリの責務は NPC の生成と管理・保持である。
+
+NPC に変更を加える場合、変更命令自体は別ライブラリから受け取り、実際の変更をこのライブラリで行う。
+
+## ライブラリの利用
+
+1. factory で作った NPC 群を manager に渡して管理
+2. 以降 NPC の設定変更の際は manager を通して行う
+
+## 設計
+### データ構造
+
+|モジュール|機能|
 |---|---|
 |NameDatabase|名前を格納する構造体|
 |NameDatabaseLoader|names.json を読み込む|
-|NPCfactory|NPC生成|
-|NPCManager|NPC管理|
+|NPCfactory|NPC 生成|
+|NPCManager|NPC 管理・変更|
 
-### 関連するライブラリ
+#### NPCFactory
+その名の通り、NPC を生成する。
 
-- [CommonLib](/posts/game_dev_4)
-
-## 解説
-Npc"Factory"という名前が付いているが、実際にはNPCの生成と管理をする。
-
-### 簡単な流れ
-1. factory で作った npc 群を manager に渡して管理
-2. 以降 npc の設定変更の際は manager を通して行う
-
-### NPCFactory
-その名の通り、npc を生成する。ざっくり機能は３つ。
+今回の実装ではプレイヤーを特別な扱いとせず、プレイヤー情報は NPC と同じクラスを使っている。
 
 - 学年単位で生成
 - 全学年まとめて生成
 - プレイヤーの生成
 
-３つめに関して、今回の実装ではプレイヤーを特別な扱いとせず、プレイヤーも npc と同じクラスを使っている。
+#### NPCMamager
+NPCMamager は NPC の実体を管理している唯一の場所である。
 
-### NPCMamager
-npc の管理をするユニット。機能が少し多い。
+NPCを一元管理しておかないと NPC を取得したり、NPC のフィールドに変更を加える際、どこの NPC 情報が現在のものか分からなくなる危険がある。
 
-- npc を配列に追加
-- npc の参照を取得
+- NPC を配列に追加
+- NPC の参照を取得
 - 進級・卒業
-- npc に部活を設定
+- NPC に部活を設定
 
-npc の実体を管理している唯一の場所。
+NPC は在校生と卒業生を分けて保持している。
 
-npc は在校生と卒業生を分けて保持している。
+在校生はゲーム中メインで使われるものである。<br>
+卒業生は後々プレイヤーが見て楽しむためのアーカイブとして活用予定である。その他 OB・OG イベントを作る際に活用できるかもしれない。
 
-在校生はゲーム中メインで使われるもの。<br>
-卒業生は後々プレイヤーが見て楽しむためのアーカイブといったところ。その他 OB・OG イベントを作る際に活用できるかもしれない。
+部活に関しては専用の lib である [ClubSystem](/posts/game_dev_3) が部活の割り当てを決め、実際の変更を manager が行う。
 
-部活に関しては専用の lib である [ClubSystem](/posts/game_dev_3) が部活の割り当てを決め、実際の変更を manager がやる。
+#### NameDatabaseLoader
+names.json から名前情報を読み込む。読み込んだデータは NameDatabase に流す。
 
-### 補足：プレイヤーの扱い
-最初 NPC とプレイヤーは別のクラスで扱おうとしていたが、最終的には NPC クラス一つに統合した。
+names.json には NPC の名前用の苗字・名前・よみがなが記載されており、Loader が NameDatabase の各構造体・配列に振り分ける。
 
-#### 当初の計画
-- Player と NPC ではゲーム内の役割が異なる
-- Player 特有のパラメータがあることを予想していた
-- NPC にはスケジュールや AI 専用のロジックが実装される可能性があった
+#### NameDatabase
+NameDatabaseLoader から受け取った情報を名前構造体に格納する。
 
-以上より、Player と NPC は分けた方が良いのではと考えていた。
+- NameEntry:汎用苗字・名前構造体<br>
+familyNames:苗字<br>
+maleNames:男子名前<br>
+femaleNames:女子名前<br>
+- UniqueNPCEntry:ユニークNPC用名前構造体<br>
+uniqueNPCs:ユニークNPC名前配列
 
-#### クラス統合
-実際に作業を進めてみると次のような問題が発生した。
+## ライブラリの拡張性
+- 名前の追加は names.json に追記する
+- NPCに対する新たな変更処理を実装する際はNPCManagerに追加する
 
-- 共通フィールドが圧倒的に多い
-- ライブラリで扱う Player と NPC に違いはほとんどない
+## 関連するライブラリ
 
-こうなってくると Player と NPC は統合してしまった方が実装が楽だし、コードの煩雑化も避けられる。
-
-実装上の大きなメリットとして、生徒に対して何か処理を行う場合 NPC クラスだけ見ればよいこと。
-
-#### UE と NPC クラスの連携は ?
-UE 側の Character とライブラリ内の NPC クラスの連携について軽く述べておく。
-
-UE では Player や NPC を Character として実装する。こちらは共通化せず分けた方が良い。大本の BaseCharacter を継承してNPC や Player を作る形になるだろう。
-
-UE の Character とライブラリ内の NPC クラスの紐づけは薄いアダプタ層を用意して行う。こちらに関しては別途記事を書く。
-
-簡単に言えば見た目や動きの部分( = Character )とデータの部分( = NPC クラス)を完全に分離したいという話である。
-
-## テスト
-このライブラリは以下のテストを行い、正しく動作していること確認した。
-
-- names.json の読み込み
-- NameDatabase への json データ格納
-- npc 配列の初期化 (全学年を一括生成し、npc 配列に格納)
-- 生成された npc の表示(苗字 名前 ふりがな 性別)
-
-尚別ライブラリから呼ばれる処理は現時点ではテスト対象外としている。
-- 部活の変更
-- 進級・卒業
-
-## 終わりに
-今回は NpcFactory の構造を整理・解説しました。<br>
-現状致命的なバグは無く、テストも問題なしといった状況です。
-
-このライブラリ単体だとかなり地味なものになっていますが、ここで作った npc を中心にゲームが動いていきます。
-
-次回以降も引き続き、別ライブラリの解説をしていきます。
+- [CommonLib](/posts/game_dev_4)
 
 {{< adsense >}}
