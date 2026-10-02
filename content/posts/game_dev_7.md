@@ -2,7 +2,7 @@
 title: "学園シミュ Lib開発 Secret"
 summary: "学園シミュで使う c++ ライブラリ Secret の解説"
 date: 2026-08-30T00:00:00+09:00
-draft: false
+draft: true
 tags: ["GameDev", "SecretLib"]
 ---
 

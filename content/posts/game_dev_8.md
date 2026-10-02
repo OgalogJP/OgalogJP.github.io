@@ -2,7 +2,7 @@
 title: "学園シミュ Lib開発 Services"
 summary: "学園シミュで使う c++ ライブラリ Services の解説"
 date: 2026-09-08T00:00:00+09:00
-draft: false
+draft: true
 tags: ["GameDev", "ServicesLib"]
 ---
 
