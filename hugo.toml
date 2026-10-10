@@ -22,8 +22,9 @@ title = 'Eila Game Lab'
   imageHeight = 120
   imageTitle = "Eira"
   
+  # トップページボタン
   [[params.profileMode.buttons]]
-  name = "記事一覧"
+  name = "All Posts"
   url = "/posts/"
 
   [[params.profileMode.buttons]]
