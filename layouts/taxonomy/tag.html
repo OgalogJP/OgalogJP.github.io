@@ -94,12 +94,13 @@
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
+{{- end }}
 
 {{ else }}
 
   <p class="no-posts">記事がありません。</p>
 
-{{- end }}
+{{ end }}
 
 
 
