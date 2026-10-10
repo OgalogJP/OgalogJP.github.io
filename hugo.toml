@@ -8,11 +8,23 @@ title = 'Eila Game Lab'
   description = "ゲーム制作・Mod制作・技術メモ"
   defaultTheme = "dark"
   showCover = true
-  profileMode = true
   disableSpecial1stPost = true
   showToc = true
   ShowLastMod = true
   enableGitInfo = true
+  
+  [params.profileMode]
+  enabled = true
+  title = "Eira Dev Notes"
+  subtitle = "ゲーム制作・技術ブログ"
+  imageUrl = "images/profile.png"   # static/images/profile.png に置く
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "Eira"
+  
+  [[params.profileMode.buttons]]
+  name = "記事一覧"
+  url = "/posts/"
     
 [markup]
   [markup.goldmark]
