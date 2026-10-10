@@ -4,7 +4,7 @@
         --main-width: 100% !important;
     }
 
-    .main:has(.post-entry) {
+    .main {
         max-width: 740px !important;
         margin: 0 auto !important;
         padding-left: var(--gap) !important;
@@ -39,12 +39,6 @@
         display: none !important;
     }
 
-    .taxonomy-term .main {
-        max-width: 740px !important;
-        margin: 0 auto !important;
-        padding-left: var(--gap) !important;
-        padding-right: var(--gap) !important;
-    }
 
 }
 
