@@ -17,7 +17,7 @@ title = 'Eila Game Lab'
   enabled = true
   title = "Eira Dev Notes"
   subtitle = "ゲーム制作・技術ブログ"
-  imageUrl = "images/profile.png"   # static/images/profile.png に置く
+  imageUrl = "images/profile.png"
   imageWidth = 120
   imageHeight = 120
   imageTitle = "Eira"
@@ -25,6 +25,14 @@ title = 'Eila Game Lab'
   [[params.profileMode.buttons]]
   name = "記事一覧"
   url = "/posts/"
+
+  [[params.profileMode.buttons]]
+  name = "Game Dev"
+  url = "/tags/gamedev/"
+
+  [[params.profileMode.buttons]]
+  name = "Misc"
+  url = "/tags/misc/"
     
 [markup]
   [markup.goldmark]
