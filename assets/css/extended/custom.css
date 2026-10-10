@@ -39,6 +39,13 @@
         display: none !important;
     }
 
+    .taxonomy-term .main {
+        max-width: 740px !important;
+        margin: 0 auto !important;
+        padding-left: var(--gap) !important;
+        padding-right: var(--gap) !important;
+    }
+
 }
 
 /* スマホやタブレットでは縦並び（通常の1カラム）に戻す */
