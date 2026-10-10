@@ -9,6 +9,7 @@ title = 'Eila Game Lab'
   defaultTheme = "dark"
   showCover = true
   homeInfoMode = false
+  profileMode = true
   disableSpecial1stPost = true
   showToc = true
   ShowLastMod = true
