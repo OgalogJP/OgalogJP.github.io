@@ -15,8 +15,8 @@ title = 'Eila Game Lab'
   
   [params.profileMode]
   enabled = true
-  title = "Eira Dev Notes"
-  subtitle = "ゲーム制作・技術ブログ"
+  title = "Eila Game Lab"
+  subtitle = "Game Dev / Playing Games"
   imageUrl = "images/profile.png"
   imageWidth = 120
   imageHeight = 120
