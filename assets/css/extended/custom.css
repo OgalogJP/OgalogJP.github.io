@@ -4,7 +4,7 @@
         --main-width: 100% !important;
     }
 
-    body .list .main {
+    body.list .main {
         max-width: 740px !important;
         margin: 0 auto !important;
         padding-left: var(--gap) !important;
