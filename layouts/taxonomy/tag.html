@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main class="main">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+      <p>{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{ if .Pages }}
+    {{ range .Pages }}
+      {{ partial "list.html" . }}
+    {{ end }}
+  {{ else }}
+    <p>このタグの記事はまだありません。</p>
+  {{ end }}
+</main>
+{{ end }}
