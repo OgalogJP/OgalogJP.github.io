@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ブログ構築 on Eila Dev Notes</title>
+    <link>https://OgalogJP.github.io/tags/%E3%83%96%E3%83%AD%E3%82%B0%E6%A7%8B%E7%AF%89/</link>
+    <description>Recent content in ブログ構築 on Eila Dev Notes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jul 2026 19:38:00 +0900</lastBuildDate>
+    <atom:link href="https://OgalogJP.github.io/tags/%E3%83%96%E3%83%AD%E3%82%B0%E6%A7%8B%E7%AF%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo（PaperMod）で記事に画像を貼る方法まとめ</title>
+      <link>https://OgalogJP.github.io/posts/image-desc/</link>
+      <pubDate>Mon, 27 Jul 2026 19:38:00 +0900</pubDate>
+      <guid>https://OgalogJP.github.io/posts/image-desc/</guid>
+      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+&lt;p&gt;Hugo + PaperMod で技術ブログを書く際、スクショや設定画面を貼りたい場面は多い。&lt;br&gt;
+この記事では、&lt;strong&gt;画像の置き場所・貼り方・サイズ調整・中央寄せ・横並び&lt;/strong&gt;など、&lt;br&gt;
+PaperMod で画像を扱うための基本をまとめる。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-画像の置き場所&#34;&gt;1. 画像の置き場所&lt;/h2&gt;
+&lt;p&gt;Hugo は &lt;code&gt;static/&lt;/code&gt; フォルダの中身をそのまま公開する仕組みになっている。&lt;br&gt;
+そのため、画像は以下の場所に置くのが基本。
+MyBlog/
+static/
+images/
+sample.png&lt;/p&gt;
+&lt;h2 id=&#34;2-記事内で画像を貼るmarkdown&#34;&gt;2. 記事内で画像を貼る（Markdown）&lt;/h2&gt;
+&lt;p&gt;最も基本的な貼り方はこれ。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;説明文&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/images/sample.png&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## 3. 画像サイズの調整
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;htmlがそのまま使える
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;img src=&amp;#34;/images/sample.png&amp;#34; width=&amp;#34;400&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
