@@ -1,6 +1,8 @@
 theme = "PaperMod"
 baseURL = 'https://OgalogJP.github.io/'
-locale = 'ja-jp'
+languageCode = "ja-jp"
+defaultContentLanguage = "ja"
+hasCJKLanguage = true
 title = 'Eila Game Lab'
 
 [params]
