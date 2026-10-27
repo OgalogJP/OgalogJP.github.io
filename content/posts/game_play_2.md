@@ -1,6 +1,6 @@
 ---
 title: "【ナナオリ】 タラニスレイド (HELL) について 【七つの大罪：Origin】"
-summary: "貪欲装備入手のための、タラニスレイド (HELL) についてまとめている"
+summary: "タラニスレイド (HELL) の攻略"
 date: 2026-09-15T00:00:00+09:00
 draft: false
 tags: ["Misc"]
