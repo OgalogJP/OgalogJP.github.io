@@ -1,7 +1,7 @@
 ---
 title: "【ナナオリ】 タラニスレイド (Transcendence) ソロ攻略【七つの大罪：Origin】"
 summary: "タラニスレイド (Transcendence) ソロ攻略"
-date: 2026-10-27T00:00:00+09:00
+date: 2026-10-29T00:00:00+09:00
 draft: false
 tags: ["Misc"]
 ---
