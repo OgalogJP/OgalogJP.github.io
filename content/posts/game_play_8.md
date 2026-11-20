@@ -94,6 +94,6 @@ ver 2.4
 ## クリアタイム
 現状の最速は 10:44.630
 
-![編成の装備](/images/misc/misc_19.png)
+![編成の装備](/images/misc/misc_20.png)
 
 {{< adsense >}}
