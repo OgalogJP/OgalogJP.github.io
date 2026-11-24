@@ -5,6 +5,11 @@ defaultContentLanguage = "ja"
 hasCJKLanguage = true
 title = 'Eila Game Lab'
 
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [params]
   env = "production"
   description = "ゲーム制作・Mod制作・技術メモ"
