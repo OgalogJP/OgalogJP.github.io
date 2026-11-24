@@ -1,5 +1,5 @@
 theme = "PaperMod"
-baseURL = 'https://OgalogJP.github.io/'
+baseURL = 'https://ogalogJP.github.io/'
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 hasCJKLanguage = true
